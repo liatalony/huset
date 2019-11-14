@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUSET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <p id="exit" onclick="closeMenu();">&times;</p>
+        <div class="textMenu">
+            <a class="menuItem" href="index.html">Events</a>
+            <a class="menuItem" href="#">General Info</a>
+            <p class="menuItem parentItem">Be Active</p>
+            <a class="menuItem subItem item1" href="volunteer.html">Volunteer</a>
+            <a class="menuItem subItem item2" href="create.html">Create Your Own Event</a>
+            <a class="menuItem" href="locations.html">Locations</a>
+        </div>
+    </div>
+    <header>
+        <img class="Logo" src="HusetLogo.png" alt="Logo">
+        <img id="menuIcon" onclick="openMenu();" alt="menuIcon" src="menu.png">
+        <form action="search.html">
+            <input type="search" name="search">
+            <input type="submit" value="search">
+        </form>
+    </header>
+    <h1>event name</h1>
+    <h2>date</h2>
+    <p class="price">price</p>
+    <img class="EventImg" src="" alt="imgAlt">
+    <p class="des">Description</p>
+    <script defer src="index.js"></script>
+</body></html>

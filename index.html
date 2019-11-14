@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUSET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <p id="exit" onclick="closeMenu();">&times;</p>
+        <div class="textMenu">
+            <a class="menuItem" href="#">Events</a>
+            <a class="menuItem" href="generalInfo.html">General Info</a>
+            <p class="menuItem parentItem">Be Active</p>
+            <a class="menuItem subItem item1" href="volunteer.html">Volunteer</a>
+            <a class="menuItem subItem item2" href="create.html">Create Your Own Event</a>
+            <a class="menuItem" href="locations">Locations</a>
+        </div>
+    </div>
+    <header>
+        <img class="Logo" src="HusetLogo.png" alt="Logo">
+        <img id="menuIcon" onclick="openMenu();" alt="menuIcon" src="menu.png">
+        <h1>What's Happening?</h1>
+        <form action="index.html">
+            <input type="search" name="search">
+            <input type="submit" value="search">
+        </form>
+        <div class="filter">
+            <div class="filterHL">
+                <h3>Filter</h3>
+                <img src="filter%20icon.png" alt="fliterLogo" class="filterLogo">
+            </div>
+            <div class="filterContent">
+                <a href="index.html" class="OneItem">All</a>
+            </div>
+        </div>
+    </header>
+    <section id="events"></section>
+    <template>
+        <article>
+            <div class="img">
+                <!--                <img src="" alt="imgAlt">-->
+            </div>
+            <div class="content">
+                <h1>event name</h1>
+                <div class="evntDtl">
+                    <h2 class="date">date</h2>
+                    <p class="price">price</p>
+                </div>
+            </div>
+
+        </article>
+    </template>
+    <script defer src="index.js"></script>
+</body></html>
