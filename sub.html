@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUSET</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex, nofollow">
 </head>
 
 <body>
@@ -18,20 +19,32 @@
             <a class="menuItem subItem item1" href="volunteer.html">Volunteer</a>
             <a class="menuItem subItem item2" href="create.html">Create Your Own Event</a>
             <a class="menuItem" href="locations.html">Locations</a>
+            <div class="SoMe">
+                <a href="https://www.facebook.com/Huset.Koebenhavn"><img class="social" alt="SoMe" src="facebook-logo.png"></a>
+                <a href="https://www.flickr.com/photos/135006755@N04/"><img class="social" alt="SoMe" src="flickr-website-logo-silhouette.png"></a>
+                <a href="https://www.instagram.com/husetkbh/"><img class="social" alt="SoMe" src="instagram-social-network-logo-of-photo-camera.png"></a>
+                <a href="https://twitter.com/HusetKBH"><img class="social" alt="SoMe" src="twitter.png"></a>
+            </div>
         </div>
     </div>
     <header>
-        <img class="Logo" src="HusetLogo.png" alt="Logo">
+        <img class="Logo subLogo" src="HusetLogo.png" alt="Logo">
         <img id="menuIcon" onclick="openMenu();" alt="menuIcon" src="menu.png">
-        <form action="search.html">
+        <form action="index.html">
             <input type="search" name="search">
             <input type="submit" value="search">
         </form>
     </header>
-    <h1>event name</h1>
-    <h2>date</h2>
-    <p class="price">price</p>
-    <img class="EventImg" src="" alt="imgAlt">
-    <p class="des">Description</p>
+    <div class="subPage">
+        <h1 class="subName">event name</h1>
+        <h2 class="subDate">date</h2>
+        <p class="price subPrice">price</p>
+        <img class="EventImg subImg" src="" alt="imgAlt">
+        <a class="buy" href="#">Buy Ticket</a>
+        <p class="des">Description</p>
+        <a class="buy" href="#">Buy Ticket</a>
+    </div>
     <script defer src="index.js"></script>
-</body></html>
+</body>
+
+</html>

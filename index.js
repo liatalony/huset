@@ -11,18 +11,20 @@ function init() {
 
     if (search) {
         getSearchData();
-        Filtering();
-        getNav();
     } else if (id) {
         getEventData();
     } else if (category) {
-        Filtering();
-        getNav();
         getCategotyData();
     } else {
-        getFrontPageData();
+        if (document.querySelector("#events")) {
+            getFrontPageData();
+        }
+    }
+
+    if (document.querySelector(".filterHL")) {
         Filtering();
         getNav();
+
     }
 }
 
@@ -52,7 +54,7 @@ function showSingleEvent(SingleEvent) {
     console.log(SingleEvent);
     document.querySelector("h1").textContent = SingleEvent.title.rendered;
     document.querySelector("h2").textContent = SingleEvent.event_date;
-    document.querySelector(".price").textContent = SingleEvent.price.rendered;
+    document.querySelector(".price").textContent = SingleEvent.price;
     const imgPath = SingleEvent._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
     document.querySelector(".EventImg").src = imgPath;
     document.querySelector(".des").innerHTML = SingleEvent.content.rendered;
@@ -178,7 +180,7 @@ const menu = document.querySelector(".menu");
 //MenuBT.addEventListener("click", openMenu);
 
 function openMenu() {
-        menu.style.width = "100%";
+    menu.style.width = "100%";
 }
 
 function closeMenu() {
